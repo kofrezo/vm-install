@@ -22,7 +22,7 @@ sed -i "s/PASSWORD/$VM_PASSWORD/" preseed.cfg
 
 virt-install \
     --connect "qemu:///system" \
-    --name "$1" \
+    --name "$VM_HOSTNAME" \
     --memory 2048 \
     --vcpus 2 \
     --disk size=10 \
